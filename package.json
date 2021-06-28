@@ -1,0 +1,23 @@
+{
+  "name": "AntiP2W",
+  "version": "1.0.0",
+  "description": "Verification bot for the AntiP2W server.",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "kindled",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "chalk": "^4.1.1",
+    "discord-buttons": "^3.2.1",
+    "discord.js": "^12.5.3",
+    "dotenv": "^10.0.0",
+    "figlet": "^1.5.0",
+    "moment": "^2.29.1",
+    "ms": "^2.1.3",
+    "wokcommands": "^1.3.6"
+  }
+}
