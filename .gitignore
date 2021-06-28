@@ -1,4 +1,4 @@
 .env
 node_modules
 .vscode
-src/config.json
+src/files/config.json

@@ -56,11 +56,11 @@ module.exports = {
 						// send an embed saying they're not authorized.
 						let embed = new Discord.MessageEmbed().setColor(config.colors.colorless).setAuthor("Pay2W Verification")
 						.setDescription("Your IP does not seem be authorized with Qlutch :c");
-						return message.channel.send(embed);
+						return msg.channel.send(embed);
 					} else {
 						// error is not a auth error, send the error.
 						let embed = Embed.colorless("AntiP2W Verification | Error", `\`\`\`${err}\`\`\``);
-						return message.channel.send(embed);
+						return msg.channel.send(embed);
 					}
 				})
 
