@@ -18,12 +18,15 @@ Verify.on("success", async (message, qlutch) => {
 	let embedLog = new Discord.MessageEmbed().setColor("#aef2aa")
 	.setAuthor(`${member.user.username}`, `https://minecraftforceop.com/forums/data/avatars/l/0/${user_id}.jpg`);
 
+	// set title
+	embedLog.setTitle("A user verified");
+
 	// add description
 	let description = [
 		`tag: ${member}`,
 		`id: \`${member.user.id}\``,
 		`uid: \`${user_id}\``,
-		`ip: \`${ip}\``,
+		`authed with ip: \`${ip}\``,
 	]
 	embedLog.setDescription(description.join("\n"));
 	// add forums profile

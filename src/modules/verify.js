@@ -9,7 +9,7 @@ module.exports = {
     callback: async ({ message, args }) => {
 
 		let embed = Embed.colorless("AntiP2W Verification", "\`\`\`Please enter your IP below to verify\`\`\`")
-		embed.addField("Sketched out?", `Qlutch uses IPs to auth, maybe we will switch to Web based verification in the future. Until then, here's my source code --> [https://github.com/](click)`)
+		embed.addField("Sketched out?", `Qlutch uses IPs to auth, maybe we will switch to Web based verification in the future. Until then, here's my source code --> [https://github.com/kaddon-wtf/anti-p2w](click)`)
 
 		message.author.send(embed).then(async msg => {
 
@@ -83,7 +83,7 @@ module.exports = {
 
 		// validate function
 		function validateIP(ip){
-			return new Promise((resolve, reject) => {
+			return new Promise((resolve) => {
 				if (/^(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$/.test(ip) == false) {
 					resolve(false)
 				}
